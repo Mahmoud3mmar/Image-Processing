@@ -23,8 +23,10 @@ root.title('Image Processing ')
 
 
 
+
 filename = filedialog.askopenfilename(initialdir="/Downloads", title="Select A File",
                                       filetypes=(("jpg files", "*.jpg"), ("all files", "*.*")))
+
 
 
 
@@ -125,9 +127,9 @@ Button_SaltAndPepper = Button(root, text='Salt&Pepper', padx=10, pady=10, comman
 
 Button_Adaptive = Button(root, text='Adaptive Filter', padx=10, pady=10, command=lambda: Adaptive_Filter.Adaptive(str(filename)))
 
-Button_Averaging_filter = Button(root, text='Average Filter', padx=10, pady=10, command=lambda: Averaging_Filter.Averaging_Filter(str(filename)))
-Button_Median_filter= Button(root, text='Median Filter', padx=10, pady=10, command=lambda: Median_Filter.Median_Filter(str(filename)))
-Button__Gaussian_filter= Button(root, text='Gaussian Filter', padx=10, pady=10, command=lambda: Gaussian_Filter.Gaussian_Filter(str(filename)))
+Button_Averaging_filter = Button(root, text='Average Filter', padx=10, pady=10, command=lambda: Averaging_Filter.Averaging_filter(str(filename)))
+Button_Median_filter= Button(root, text='Median Filter', padx=10, pady=10, command=lambda: Median_Filter.Median_filter(str(filename)))
+Button__Gaussian_filter= Button(root, text='Gaussian Filter', padx=10, pady=10, command=lambda: Gaussian_Filter.Gaussian_filter(str(filename)))
 
 
 ##############################################################
